@@ -41,7 +41,7 @@ jobs:
         # 2: Base image (e.g. ubuntu:18.04)
         dockerfile: [[ubuntu-jammy, 'linux/amd64,linux/arm64,linux/ppc64le', 'ubuntu:22.04']]
     name: Build ${{ matrix.dockerfile[0] }}
-    if: github.repository == 'seqeralabs/spack' 
+    if: github.repository == 'pabloaledo/spack' 
     steps:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # @v2
