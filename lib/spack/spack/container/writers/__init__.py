@@ -112,8 +112,8 @@ def _stage_base_images(images_config):
 def _spack_checkout_config(images_config):
     spack_info = images_config["spack"]
 
-    url = "https://github.com/spack/spack.git"
-    ref = "develop"
+    url = "https://github.com/pabloaledo/spack.git"
+    ref = "cicd"
     resolve_sha, verify = False, False
 
     # Config specific values may override defaults
