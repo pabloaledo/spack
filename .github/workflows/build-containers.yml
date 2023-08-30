@@ -108,7 +108,5 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            spack/${{ env.container }}
-            spack/${{ env.versioned }}
-            ghcr.io/spack/${{ env.container }}
-            ghcr.io/spack/${{ env.versioned }}
+            pabloaledoseqera/${{ env.container }}
+            pabloaledoseqera/${{ env.versioned }}
